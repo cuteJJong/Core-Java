@@ -1,0 +1,17 @@
+
+public class OpDemo {
+
+	public static void main(String[] args) {
+		//short su = ~5;
+		//short result = ~su;			// ~연산자는 결과를 int로 바꾼다.
+		
+		//short result = true ?  1970 :  2024;
+		//short result = true ? 1970 : 3.14;			//삼항연산자는 참과 거짓을 먼저 확인하고 조건을 확인한다.
+		
+		
+		
+		
+		
+	}
+
+}

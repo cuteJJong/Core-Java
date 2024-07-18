@@ -1,0 +1,30 @@
+
+public class LoopDemo {
+
+	public static void main(String[] args) {
+
+		//A ~Z까지 출력하기
+//		int i = 65;	// 초기화 밖으로 빼낼 수 있다. //1			// i = 90
+//		int count  = 0;			// 지역변수는 항상 0으로 초기화
+//		for( ;  i <= 90 ;  ) {			//조건식은 잊지말기 //2	// i>=65
+//			System.out.printf("%c\t", (char)i);			//3
+//			//i++;			// 증감식도 밖으로 뺼 수 있다.	//4	// i--
+//			count++;
+//			if(count % 5 == 0) {
+//				System.out.println();			//줄바꿈
+//			}
+//			i++;		//i -= 3;	// i = i - 3
+//		}
+//		System.out.println();
+
+		//4의배수
+		int count = 0;
+		for(int i = 1; i <= 100 ; i++) {
+			if(i % 4 == 0) {
+				count++;
+			}
+		}
+		System.out.println("개수는 %d\n", count);
+	}
+
+}

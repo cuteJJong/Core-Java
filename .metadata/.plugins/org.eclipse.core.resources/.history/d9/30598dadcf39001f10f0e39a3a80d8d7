@@ -1,0 +1,25 @@
+
+public class VariableDemo {
+	public static void main(String[] args) {
+//		String name;	// 변수 선언(variable Declaration)
+//		
+//		name = "한지민";		//할당(Assignment);
+//		
+//		String email ="aaa@aaa.com";		//초기화 Initialization
+//		
+//		int su = 5;
+//		
+//		System.out.printf("숫자 500 = %d\n", 500);
+//		System.out.printf("숫자 500 = %o\n", 500);
+//		System.out.printf("숫자 500 = %x\n", 500);
+//		int a = 5;			// stack 쌓이고 4byte
+//		short b = 7;
+//		short sum = 5 + 7;
+		byte a =  5;
+		byte b = 7;
+		byte sum = 5 + 7;
+		System.out.printf("sum = %d", sum);
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Bmi {
+
+	public static void main(String[] args) {
+		System.out.printf("이름을 입력하세요 : ");
+		Scanner sc = new Scanner(System.in);
+		String name = sc.nextLine();
+		System.out.printf("신장(cm)을 입력하세요 : ");
+		Scanner sc2 = new Scanner(System.in);
+		int height = sc.nextInt();
+		System.out.printf("몸무게(kg)을 입력하세요 : ");
+		Scanner sc3 = new Scanner(System.in);
+		int weight = sc.nextInt();
+	}
+
+}

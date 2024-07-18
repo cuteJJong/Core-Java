@@ -1,0 +1,25 @@
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		int [] age;	//declaration		
+		age = new int[4];	//creation		힙에 공간을 생성
+		
+		//assignment
+		age[0] = 6;		age[1] = 7;		age[2] = 8;		age[3] = 9;
+	
+		//initialization 과정
+		//char[] array = new char[] {'a', 'b', 'c', 'd'};
+		char[] array = {'a', 'b', 'c', 'd'};		
+		
+//		char[] array = null;
+//		array = {'a', 'b', 'c', 'd'};	X	
+		
+		char[] array = null;
+		array = new char[] {'a', 'b', 'c', 'd'};
+		
+		String name = "한지민"; 		//initialization;
+
+	}
+
+}
