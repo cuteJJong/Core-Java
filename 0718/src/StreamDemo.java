@@ -17,7 +17,7 @@ Stream API
 6. But, 최종 연산의 결과는 Stream이 아니기 때문에 일단 최종연산을 수행하면 다시 다른 Stream 연산을 수행할 수 없다.
 7. Stream 연산은 원본의 데이터를 읽어서 기능을 수행하지만, 그 내용을 변경하지 않는다.
  */
-public class StringDemo {
+public class StreamDemo {
     public static void main(String[] args) {
         //Stream 생성 : 배열을 이용할 것인가, 아니면 Collection을 이용할 것인가에 따라 약간 다르다.
         //배열로 부터 Stream 생성하기
@@ -25,6 +25,7 @@ public class StringDemo {
         Stream<Integer> s1 = Stream.of(intArray);
         String [] strArray = {"사과", "배", "딸기", "복숭아", "레몬", "망고", "수박"};
         Stream<String> s2 = Stream.of(strArray);
+        //s2.forEach(d -> System.out.println(d));
 
         //Arrays로부터 Stream 생성하는 방법
         Stream<Integer> s3 = Arrays.stream(intArray);
