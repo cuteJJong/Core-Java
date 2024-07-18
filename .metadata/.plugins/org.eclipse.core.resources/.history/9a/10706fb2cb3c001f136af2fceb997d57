@@ -1,0 +1,17 @@
+
+public class ForDemo {
+
+	public static void main(String[] args) {
+		// 'A' --> 65 encoding
+		//
+		int count =  0;
+		for(int i = 65 ; i <= 90 ; i++) {
+			System.out.printf("%c\t", (char)i);
+			count++;
+			if(count % 5 == 0); {
+				System.out.println();
+			}
+		}
+	}
+
+}

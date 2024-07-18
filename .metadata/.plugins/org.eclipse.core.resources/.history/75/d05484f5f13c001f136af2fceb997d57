@@ -1,0 +1,23 @@
+
+public class SungjukMgmt1 {
+
+	public static void main(String[] args) {
+		Student [] array = new Student[2];	// 학생 2명 배열
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		for(int i = 0 ; i < 2; i++) {
+			array[i] = new Student();			//학생객체 생성
+			System.out.println("학번 : ");
+			String hakbun = sc.next();
+			System.out.println("국어 : ");
+			int kor = sc.nextInt();
+			System.out.println("영어 : ");
+			int eng = sc.nextInt();
+			System.out.println("수학 : ");
+			int math = sc.nextInt();
+			array[i].hakbun = hakbun;		//	NullPointerException error : 객체를 만들어줘야한다. student의 주소를 만들어줘야한다.
+															//	5번째줄은 student가 들어갈 공간을 만든 것
+			
+		}
+		
+	}	
+}

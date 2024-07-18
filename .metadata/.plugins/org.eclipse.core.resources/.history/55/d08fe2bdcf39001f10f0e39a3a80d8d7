@@ -1,0 +1,32 @@
+
+public class VariableDemo {
+	public static void main(String[] args) {
+//		String name;	// 변수 선언(variable Declaration)
+//		
+//		name = "한지민";		//할당(Assignment);
+//		
+//		String email ="aaa@aaa.com";		//초기화 Initialization
+//		
+//		int su = 5;
+//		
+//		System.out.printf("숫자 500 = %d\n", 500);
+//		System.out.printf("숫자 500 = %o\n", 500);
+//		System.out.printf("숫자 500 = %x\n", 500);
+//		int a = 5;			// stack 쌓이고 4byte
+//		short b = 7;														// 32768 x 
+//		short sum = 5 + 7;
+//		byte a =  5;														//128은 안된다 최대 최소 기억하기
+//		byte b = 7;
+//		byte sum = 5 + 7;
+//		int a = 32768L;  안됌
+		float f = 0.1234567890123456789f;
+		double d = 0.1234567890123456789;
+		System.out.println("f = " + f);
+		System.out.println("double = " + d);
+		
+		
+//		System.out.printf("sum = %d", sum);			//에러가 안나는 이유는 무의미한 0을 가진 byte를 짜른다.
+		
+		
+	}
+}
