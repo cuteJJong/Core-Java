@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // 생성자 만들어주기
         List<Product> list = new ArrayList<Product>();
         Input input = new Input(list);
         input.fileInput();

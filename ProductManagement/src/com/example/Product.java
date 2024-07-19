@@ -1,10 +1,10 @@
 package com.example;
 
 public class Product {
-    private String name;
-    private int quantity;
-    private int sellPrice;
-    private int buyPrice;
+    private String name;    //제품명
+    private int quantity;   //수량
+    private int sellPrice;  //판매단가
+    private int buyPrice;   //매입단가
     private int transport;  //운송료
     private int benefit;    //이익금
     private double rate;    //이익률

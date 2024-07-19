@@ -21,4 +21,9 @@ public class Output {
         System.out.println("제품명\t수량\t판매단가\t매입단가\t운송료\t이익금\t이익율");
         System.out.println("-----------------------------------------------------------");
     }
+
+    @Override
+    public String toString() {
+        return
+    }
 }

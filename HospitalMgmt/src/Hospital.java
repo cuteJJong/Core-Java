@@ -1,67 +1,63 @@
-public class Patient {
-    private int id;
-    private String departmentCode;
-    private int daysAdmitted;
+public class Hospital {
+    private int number;
+    private Department department;
+    private int days;
     private int age;
-    private int consultationFee;
-    private double totalCost;
+    private double consultationFee;
+    private double hospitalizationFee;
+    private double totalFee;
 
-    public Patient(int id, String departmentCode, int daysAdmitted, int age) {
-        this.id = id;
-        this.departmentCode = departmentCode;
-        this.daysAdmitted = daysAdmitted;
+    public Hospital(int number, String departmentCode, int days, int age) {
+        this.number = number;
+        this.department = Department.fromCode(departmentCode);
+        this.days = days;
         this.age = age;
     }
 
-    public int getId() {
-        return id;
+    public int getNumber() {
+        return number;
     }
 
-    public String getDepartmentCode() {
-        return departmentCode;
+    public Department getDepartment() {
+        return department;
     }
 
-    public int getDaysAdmitted() {
-        return daysAdmitted;
+    public int getDays() {
+        return days;
     }
 
     public int getAge() {
         return age;
     }
 
-    public int getConsultationFee() {
+    public void setConsultationFee(double fee) {
+        this.consultationFee = fee;
+    }
+
+    public void setHospitalizationFee(double fee) {
+        this.hospitalizationFee = fee;
+    }
+
+    public void setTotalFee(double fee) {
+        this.totalFee = fee;
+    }
+
+    public double getConsultationFee() {
         return consultationFee;
     }
 
-    public void setConsultationFee(int consultationFee) {
-        this.consultationFee = consultationFee;
+    public double getHospitalizationFee() {
+        return hospitalizationFee;
     }
 
-    public double getTotalCost() {
-        return totalCost;
-    }
-
-    public void setTotalCost(double totalCost) {
-        this.totalCost = totalCost;
+    public double getTotalFee() {
+        return totalFee;
     }
 
     @Override
     public String toString() {
-        return String.format("%-10d %-10s %,10d %,10d %,10.2f", id, departmentCode, consultationFee, calculateHospitalizationFee(), totalCost);
-    }
-
-    public int calculateHospitalizationFee() {
-        int dailyFee = (daysAdmitted <= 3) ? 30000 : 25000;
-        int totalFee = dailyFee * daysAdmitted;
-        return totalFee;
-    }
-
-    public double calculateDiscountRate() {
-        if (daysAdmitted < 10) return 1.00;
-        if (daysAdmitted < 15) return 0.85;
-        if (daysAdmitted < 20) return 0.80;
-        if (daysAdmitted < 30) return 0.77;
-        if (daysAdmitted < 100) return 0.72;
-        return 0.68;
+        return String.format("%d\t%s\t%.0f\t%.0f\t%.0f",
+                number, department.getName(), consultationFee,
+                hospitalizationFee, totalFee);
     }
 }
