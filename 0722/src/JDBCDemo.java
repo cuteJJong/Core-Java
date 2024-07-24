@@ -45,7 +45,7 @@ public class JDBCDemo {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        //반드시 close해야 한다.
+        //7.반드시 close해야 한다.
         try {
             rs.next();
             if (rs != null) rs.close();
